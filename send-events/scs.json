@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "id": "e19110c2-9e1b-49b5-9922-4c8445b8596c",
+    "type": "EiffelSourceChangeSubmittedEvent",
+    "time": "1507900282903",
+    "source": {
+      "host": "mads-UX302LG",
+      "name": "Eiffel command line generator",
+      "uri": "https://github.com/Praqma/tracey-protocol-eiffel-cli-generator",
+      "serializer": {
+        "groupId": "com.sun",
+        "artifactId": "Java Runtime Environment",
+        "version": "1.8.0_131"
+      }
+    }
+  },
+  "links": [{
+    "type": "CHANGE",
+    "id": "7129c39c-4739-4e1b-8ce8-f412714df3a7"
+  }],
+  "data": {
+    "submitter": {
+      "name": "Mads Nielsen",
+      "email": "man@praqma.net"
+    },
+    "gitIdentifier": {
+      "commitId": "9fb5f8f431046250605e532274ccf3a02975e2b5",
+      "branch": "master",
+      "repoName": "tracey-protocol-eiffel-cli-generator",
+      "repoUri": "git@github.com:Praqma/tracey-protocol-eiffel-cli-generator.git"
+    }
+  }
+}

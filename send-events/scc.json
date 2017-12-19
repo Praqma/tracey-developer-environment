@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "id": "7129c39c-4739-4e1b-8ce8-f412714df3a7",
+    "type": "EiffelSourceChangeCreatedEvent",
+    "time": "1507900203824",
+    "source": {
+      "host": "mads-UX302LG",
+      "name": "Eiffel command line generator",
+      "uri": "https://github.com/Praqma/tracey-protocol-eiffel-cli-generator",
+      "serializer": {
+        "groupId": "com.sun",
+        "artifactId": "Java Runtime Environment",
+        "version": "1.8.0_131"
+      }
+    }
+  },
+  "data": {
+    "author": {
+      "name": "Mads Nielsen",
+      "email": "man@praqma.net"
+    },
+    "issues": [{
+      "id": "17",
+      "transition": "PARTIAL",
+      "uri": "http://github.com/null/issues/17",
+      "trackerType": "GitHub"
+    }],
+    "change": {
+      "insertions": 139,
+      "deletions": 2,
+      "files": ["MODIFY README.md", "MODIFY build.gradle", "MODIFY src/main/java/net/praqma/tracey/protocol/eiffel/cli/EiffelArgumentParser.java", "ADD src/main/java/net/praqma/tracey/protocol/eiffel/cli/EiffelArtifactReusedEventParser.java", "ADD src/test/java/net/praqma/tracey/protocol/eiffel/EiffelArtifactReusedEventParserTest.java", "ADD src/test/resources/net/praqma/tracey/protocol/eiffel/ArtP.json"]
+    },
+    "gitIdentifier": {
+      "commitId": "9fb5f8f431046250605e532274ccf3a02975e2b5",
+      "branch": "master",
+      "repoName": "tracey-protocol-eiffel-cli-generator",
+      "repoUri": "git@github.com:Praqma/tracey-protocol-eiffel-cli-generator.git"
+    }
+  }
+}
