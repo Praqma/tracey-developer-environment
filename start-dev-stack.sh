@@ -10,10 +10,12 @@ echo "Stopping and removing possible already running instances..."
 
 docker stop tracey-dev-rabbit
 docker rm tracey-dev-rabbit
-docker stop tracey-dev-neo4j
-docker rm tracey-dev-neo4j
+#docker stop tracey-dev-neo4j
+#docker rm tracey-dev-neo4j
 
-echo "Starting RabbitMQ and neo4j containers ..."
+# FIXME - neo4j not used currently
+#echo "Starting RabbitMQ and neo4j containers ..."
+echo "Starting RabbitMQ container ..."
 
 # From https://hub.docker.com/r/_/rabbitmq/:
 # One of the important things to note about RabbitMQ is that it stores data
@@ -25,7 +27,7 @@ echo "Starting RabbitMQ and neo4j containers ..."
 docker run -d --hostname tracey-dev-rabbit --name tracey-dev-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3.6.10-management-alpine
 
 # Adding a 10000 to the port numbers on localhost compared to the containers inside
-docker run -d --name tracey-dev-neo4j --volume=$DATADIR/neo4j/data:/data --volume=$DATADIR/neo4j/logs:/logs -p 17474:7474 -p 17473:7473 -p 17687:7687 neo4j
+#docker run -d --name tracey-dev-neo4j --volume=$DATADIR/neo4j/data:/data --volume=$DATADIR/neo4j/logs:/logs -p 17474:7474 -p 17473:7473 -p 17687:7687 neo4j
 
 echo "done, container created:"
 
