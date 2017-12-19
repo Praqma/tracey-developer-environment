@@ -27,3 +27,19 @@ It uses `scc.json` and `scs.json` and some jar-files you need to download here f
 For send configuration it uses the `default.cfg` file for host of the RabbitMQ.
 
 Uses port `5682` send on, see `default.cfg` file
+
+
+## Debugging messages
+
+If you want to see messages processed by RabbitMQ you can bind a queue to the Tracey exchange.
+
+1. Open [http://localhost:15672](http://localhost:15672)
+1. go to the `Queues`-tab
+1. Under `Add a new queue` fill out `name` to be `tracey-messages-debug` and click `Add queue`
+1. Then click on the queue that shows up in the table above to open the queue
+1. Go to the binding section `Add binding to this queue` and fill in the field `From exchange` to be `Tracey` (matching the exchange we send on). Then click `Bind`.
+
+
+Then send messages, and you should see queued messages graph showing numbers.
+
+To see the actual numbers, to the `Get messages` section on the same page you're on, and click `Get message(s)` and you have json.
